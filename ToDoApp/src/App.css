@@ -118,7 +118,7 @@ body {
 
 /* 🧩 Main Container */
 .container {
-  width: 400px;
+  width: 450px;
   background-color: #ffffff;
   padding: 25px 30px;
   border-radius: 15px;
@@ -208,4 +208,28 @@ tr:hover td {
 td[colspan] {
   color: #999;
   font-style: italic;
+}
+
+/* 🗑️ Delete Button */
+.delete-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* 🔢 Total Students Text */
+.total {
+  text-align: right;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #1976d2;
 }

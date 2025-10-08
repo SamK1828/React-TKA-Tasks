@@ -35,6 +35,13 @@ import StudentTable from './components/StudentTable';
 function App() {
   const [students, setStudents] = useState([]);
 
+  const deleteStudent = (indexToDelete) => {
+    if (confirm('Are you sure you want to delete this student?')) {
+      setStudents(students.filter((_, index) => index !== indexToDelete));
+    }
+  };
+
+
   // Function to add student
   const addStudent = (student) => {
     setStudents([...students, student]);
@@ -45,7 +52,12 @@ function App() {
       <h2>Student Registration</h2>
       <StudentForm onRegister={addStudent} />
       <h3>Registered Students</h3>
-      <StudentTable students={students} />
+      <StudentTable students={students} onDelete={deleteStudent} />
+
+      {/* 👇 Total Students Count */}
+      <p className="total">
+        Total Students: <strong>{students.length}</strong>
+      </p>
     </div>
   );
 }
