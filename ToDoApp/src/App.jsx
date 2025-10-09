@@ -51,13 +51,12 @@ function App() {
     <div className="container">
       <h2>Student Registration</h2>
       <StudentForm onRegister={addStudent} />
-      <h3>Registered Students</h3>
-      <StudentTable students={students} onDelete={deleteStudent} />
+      {
+        students.length === 0 ? <h1>No students registered yet.</h1> : (<><><h3>Registered Students</h3><StudentTable students={students} onDelete={deleteStudent} /></><p className="total">
+          Total Students: <strong>{students.length}</strong>
+        </p></>)
+      }
 
-      {/* 👇 Total Students Count */}
-      <p className="total">
-        Total Students: <strong>{students.length}</strong>
-      </p>
     </div>
   );
 }
