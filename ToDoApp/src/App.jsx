@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useState } from "react";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
-import StudentForm from './components/StudentForm';
-import StudentTable from './components/StudentTable';
+import "./App.css";
+import StudentForm from "./components/StudentForm";
+import StudentTable from "./components/StudentTable";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -36,11 +36,10 @@ function App() {
   const [students, setStudents] = useState([]);
 
   const deleteStudent = (indexToDelete) => {
-    if (confirm('Are you sure you want to delete this student?')) {
+    if (confirm("Are you sure you want to delete this student?")) {
       setStudents(students.filter((_, index) => index !== indexToDelete));
     }
   };
-
 
   // Function to add student
   const addStudent = (student) => {
@@ -51,13 +50,18 @@ function App() {
     <div className="container">
       <h2>Student Registration</h2>
       <StudentForm onRegister={addStudent} />
-      {
-        students.length === 0 ? <h1>No students registered yet.</h1> : (<><><h3>Registered Students</h3><StudentTable students={students} onDelete={deleteStudent} /></><p className="total">
-          Total Students: <strong>{students.length}</strong>
-        </p></>)
-      }
-
+      {students.length === 0 ? (
+        <h1>No students registered yet.</h1>
+      ) : (
+        <>
+          <h3>Registered Students</h3>
+          <StudentTable students={students} onDelete={deleteStudent} />
+          <p className="total">
+            Total Students: <strong>{students.length}</strong>
+          </p>
+        </>
+      )}
     </div>
   );
 }
-export default App
+export default App;
