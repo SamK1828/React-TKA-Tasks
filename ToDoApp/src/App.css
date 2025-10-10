@@ -239,3 +239,32 @@ td[colspan] {
   font-weight: 600;
   color: #1976d2;
 }
+
+/* Buttons */
+.edit-btn {
+  background-color: #fbc02d;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #f9a825;
+  transform: scale(1.05);
+}
+
+/* Stats Section */
+.stats {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+  color: #333;
+}
