@@ -71,7 +71,8 @@ public class EmployeeDao {
 		Transaction tx = null;
 		try (Session session = sf.openSession()) {
 			tx = session.beginTransaction();
-			session.update(emp);
+			// session.update(emp);
+			session.merge(emp);
 			tx.commit();
 			isUpdated = true;
 		} catch (Exception e) {
@@ -88,7 +89,8 @@ public class EmployeeDao {
 			Employee emp = session.get(Employee.class, id);
 			if (emp != null) {
 				tx = session.beginTransaction();
-				session.delete(emp);
+				// session.delete(emp);
+				session.remove(emp);
 				tx.commit();
 				isDeleted = true;
 			}
