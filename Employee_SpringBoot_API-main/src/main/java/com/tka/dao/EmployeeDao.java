@@ -22,7 +22,7 @@ public class EmployeeDao {
 		try (Session session = sf.openSession()) {
 			
 			tx = session.beginTransaction();
-			session.save(emp);
+			session.persist(emp);
 			tx.commit();
 			return true;
 		}
