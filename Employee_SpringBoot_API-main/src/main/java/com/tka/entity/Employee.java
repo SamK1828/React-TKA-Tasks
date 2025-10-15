@@ -12,7 +12,7 @@ public class Employee {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
-	
+
 	@Column(unique = true, nullable = false)
 	private String email;
 	private String password;
@@ -63,6 +63,5 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + "]";
 	}
-	
-	
+
 }

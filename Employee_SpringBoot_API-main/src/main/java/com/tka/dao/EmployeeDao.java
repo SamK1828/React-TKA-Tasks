@@ -20,22 +20,20 @@ public class EmployeeDao {
 	public boolean save(Employee emp) {
 		Transaction tx = null;
 		try (Session session = sf.openSession()) {
-			
+
 			tx = session.beginTransaction();
 			session.persist(emp);
 			tx.commit();
 			return true;
-		}
-		catch (ConstraintViolationException e) {
+		} catch (ConstraintViolationException e) {
 			throw new RuntimeException("Email already exists: " + emp.getEmail(), e);
-			
-		}
-		catch (Exception e) {
+
+		} catch (Exception e) {
 			throw new RuntimeException("Something went wrong ", e);
 		}
-		
+
 	}
-	
+
 	public Employee login(String email, String password) {
 		try (Session session = sf.openSession()) {
 			return session.createQuery("FROM Employee WHERE email = :email AND password = :password", Employee.class)
@@ -45,7 +43,7 @@ public class EmployeeDao {
 
 	public Employee findByEmail(String email) {
 		try (Session session = sf.openSession()) {
-		 List<Employee> list = session.createQuery("FROM Employee WHERE email = :email", Employee.class)
+			List<Employee> list = session.createQuery("FROM Employee WHERE email = :email", Employee.class)
 					.setParameter("email", email).list();
 			if (list != null && !list.isEmpty()) {
 				return list.get(0);
