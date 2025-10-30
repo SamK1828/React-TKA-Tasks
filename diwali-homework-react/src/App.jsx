@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home.jsx';
-import JavaScriptPage from './pages/JavaScript.jsx';
+import JavaScript from './pages/JavaScript.jsx';
 import ReactExercises from './pages/ReactExercises.jsx';
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
       <div style={{ padding: '20px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/js" element={<JavaScriptPage />} />
+          <Route path="/js" element={<JavaScript />} />
           <Route path="/react" element={<ReactExercises />} />
         </Routes>
       </div>
