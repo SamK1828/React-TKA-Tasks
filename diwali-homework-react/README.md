@@ -78,22 +78,21 @@ src/
 
 ### 2. Install Dependencies
 
-    ```bash
+```bash
     npm install
-    ```
+```
 
 ### 3. Run the Project
 
 ```bash
-npm run dev
+    npm run dev
 ```
 
 Then open your browser at:
 
 ```bash
-http://localhost:5173/
+    http://localhost:5173/
 ```
-
 ---
 
 ## 🌐 Available Routes
@@ -138,5 +137,5 @@ This project is released under the **MIT License** — free for educational and 
 
 ---
 
-> 🎯 _“Code. Debug. Learn. Repeat.”_
-> A complete Diwali Homework compilation showcasing JavaScript logic and React mastery.
+> 🎯  “Code. Debug. Learn. Repeat.”_
+>   A complete Diwali Homework compilation showcasing JavaScript logic and React mastery.
