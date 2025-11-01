@@ -7,7 +7,7 @@ import ReactExercises from './pages/ReactExercises.jsx';
 export default function App() {
   return (
     <BrowserRouter>
-      <nav style={{
+      {/* <nav style={{
         display: 'flex',
         gap: '15px',
         padding: '10px',
@@ -17,13 +17,15 @@ export default function App() {
         <Link to="/">🏠 Home</Link>
         <Link to="/js">💻 JavaScript Problems</Link>
         <Link to="/react">⚛️ React Exercises</Link>
-      </nav>
+      </nav> */}
 
       <div style={{ padding: '20px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/js" element={<JavaScript />} />
-          <Route path="/react" element={<ReactExercises />} />
+          {/* <Route path="/react" element={<ReactExercises />} /> */}
+          <Route path="/react/*" element={<ReactExercises />} />
+
         </Routes>
       </div>
     </BrowserRouter>
