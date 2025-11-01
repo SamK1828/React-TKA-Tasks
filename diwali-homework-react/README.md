@@ -117,8 +117,10 @@ Then open your browser at:
 
 ## 🧑‍💻 Author
 
-**Samarth Kalegaonkar**
+**Samarth Deelip Kalegaonkar**
+
 📧 Email: [kalegaonkarsamarth@gmail.com](mailto:kalegaonkarsamarth@gmail.com)
+
 💻 GitHub: [https://github.com/SamK1828](https://github.com/SamK1828)
 
 ---
