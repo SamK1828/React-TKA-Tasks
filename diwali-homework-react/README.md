@@ -8,6 +8,7 @@ It’s built using **React + Vite**, demonstrating mastery in JavaScript logic, 
 ## 🧩 Overview
 
 This project was created as part of the **Diwali Homework Assignment** to practice:
+
 - JavaScript logic building (arrays, recursion, async, DOM)
 - React fundamentals (components, props, state)
 - Advanced React (forms, routing, CRUD, conditional rendering)
@@ -18,6 +19,7 @@ This project was created as part of the **Diwali Homework Assignment** to practi
 ## 🧠 Features
 
 ### JavaScript Section
+
 - 20 logical & functional problems implemented in pure JavaScript
 - Includes:
   - Array manipulation, flattening, intersection
@@ -27,6 +29,7 @@ This project was created as part of the **Diwali Homework Assignment** to practi
 - All problems are runnable interactively in the browser
 
 ### React Section
+
 - 20 React assignments implemented as independent components:
   - Props & state-based components
   - Forms with validation and controlled inputs
@@ -60,24 +63,24 @@ src/
 ├── Home.jsx              # Landing page
 ├── JavaScript.jsx        # JS problem dashboard
 └── ReactExercises.jsx    # React exercises dashboard
-
-````
+```
 
 ---
 
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/<your-username>/diwali-homework-react.git
-cd diwali-homework-react
-````
+    git clone https://github.com/<your-username>/diwali-homework-react.git
+    cd diwali-homework-react
+```
 
 ### 2. Install Dependencies
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 ### 3. Run the Project
 
@@ -87,7 +90,7 @@ npm run dev
 
 Then open your browser at:
 
-```
+```bash
 http://localhost:5173/
 ```
 
@@ -105,19 +108,19 @@ http://localhost:5173/
 
 ## 🧰 Technologies Used
 
-* **React 18** (functional components, hooks)
-* **Vite** (fast bundler)
-* **React Router DOM v6**
-* **JavaScript (ES6+)**
-* **HTML5 & CSS3**
+- **React 18** (functional components, hooks)
+- **Vite** (fast bundler)
+- **React Router DOM v6**
+- **JavaScript (ES6+)**
+- **HTML5 & CSS3**
 
 ---
 
 ## 🧑‍💻 Author
 
 **Samarth Kalegaonkar**
-📧 Email: [samarth.kalegaonkar@example.com](mailto:samarth.kalegaonkar@example.com)
-💻 GitHub: [https://github.com/YourUsername](https://github.com/YourUsername)
+📧 Email: [kalegaonkarsamarth@gmail.com](mailto:kalegaonkarsamarth@gmail.com)
+💻 GitHub: [https://github.com/SamK1828](https://github.com/SamK1828)
 
 ---
 
@@ -129,11 +132,11 @@ This project is released under the **MIT License** — free for educational and 
 
 ## 💡 Key Learning Takeaways
 
-* Strengthened problem-solving using core JavaScript.
-* Gained practical experience with React hooks, component composition, and routing.
-* Built a clean, modular project structure ready for scaling or portfolio inclusion.
+- Strengthened problem-solving using core JavaScript.
+- Gained practical experience with React hooks, component composition, and routing.
+- Built a clean, modular project structure ready for scaling or portfolio inclusion.
 
 ---
 
-> 🎯 *“Code. Debug. Learn. Repeat.”*
+> 🎯 _“Code. Debug. Learn. Repeat.”_
 > A complete Diwali Homework compilation showcasing JavaScript logic and React mastery.
